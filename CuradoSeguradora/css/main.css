@@ -14,7 +14,7 @@
 a:link, a:visited{
 	color:#666666;
 }
-a:hover, a:active{
+a:hover, a:active, a:focus{
 	color:#E2001A;
 }
 
