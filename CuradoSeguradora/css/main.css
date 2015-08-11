@@ -6,11 +6,18 @@
 	width:100%;
 	position:fixed;
 	text-align:center;
+}
+#menuNav a{
+	text-decoration:none;
+	font-family: Georgia, Serif;
+}
+a:link, a:visited{
+	color:#666666;
+}
+a:hover, a:active{
+	color:#E2001A;
+}
 
-}
-#TargetInicio{
-	height:75px;
-}
 #home{
 	height:500px;
 }
@@ -28,7 +35,22 @@
 }
 #midia{
 	text-align:center;
-	
 }
-.fundoclaro{background-color:#a2daf4;}
-.fundoescuro{background-color:#009ee0;}
+
+.espacoDeTransicao{
+	padding-top:75px;
+}
+.itemMenuNav{
+	padding-top:40px;
+	
+	height:35px;
+	width:80px;
+	margin-right:10px;
+	float:right;
+}
+.fundoClaro{
+	background-color:#a2daf4;
+	}
+.fundoEscuro{
+	background-color:#009ee0;
+}
