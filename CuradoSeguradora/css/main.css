@@ -1,6 +1,14 @@
 #menuNav{
-	height:50px;
-	width:70%;
+	height:75px;
+	background-color:white;
+	top:0;
+	left:0;
+	width:100%;
+	position:fixed;
+	text-align:center;
+}
+#TargetInicio{
+	height:75px;
 }
 #home{
 	height:500px;
