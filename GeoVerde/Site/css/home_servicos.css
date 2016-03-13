@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+.pagina_no_menu{
+	height:35px;
+	width:358px;
+	background:#cccfd2;
+	margin:1px 0 0 1px;
+}
+
+
+/*CONTEÚDO*/
+#gradient{
+	position:absolute;
+	width:1080px;
+	height:462px;
+	background:url(../img/gradiente_conteudo_servicos.jpg) no-repeat;
+	z-index:0;
+	margin-top:-126px;
+}
+
+#conteudo_interno{
+	position:relative;
+	height: auto;
+	width: 720px;
+	margin: 126px auto 126px auto;
+	z-index:1;
+}
+
+#tlt_servicos{
+	font-family: "Bebas Neue";
+	font-size: 66px;
+	color: #468c40;
+	width: 700px;
+	border-bottom:1px solid #c1c6ca;
+	margin-bottom:86px;
+	padding:0 10px 0 10px;
+}
+
+#ecolha_servico{
+	background-color: #c1c6ca;
+	height: 52px;
+	width: 690px;
+	font-family: "Open Sans Extrabold";
+	border:0;
+	margin-top:6px;
+	color:#666;
+	font-size:16px;
+	padding-left:10px;
+	padding-top:2px;
+}
+
+label{
+	font-size:28px;
+	font-family:"Open Sans Light";
+}
+
+.box_servico{
+	height: 214px;
+	width: 700px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;	
+	border-bottom-color:#c1c6ca;
+	margin:86px 0 86px 0;
+	padding:0 10px 0 10px;
+}
+
+.tlt_servico{
+	color:#468c40;
+	font-family:"Open Sans Extrabold";
+	font-size:28px;
+	margin-bottom:22px;
+}
+
+.txt_serviço{
+	line-height:30px;
+}

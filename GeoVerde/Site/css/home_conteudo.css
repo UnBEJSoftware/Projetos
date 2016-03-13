@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+
+.pagina_no_menu{
+	height:53px;
+	width:359px;
+	background:#cccfd2;
+	margin:1px 0 0 1px;
+}
+
+/*SLIDER*/
+#slider{
+	height: 462px;
+	width: 1080px;	
+	background:#666;
+}
+
+.img_slider{
+	height: 462px;
+	width: 1080px;
+	position: relative;	
+}
+
+#botoes_slider{
+	position:absolute;
+	width:156px;
+	height:8px;
+	margin:156px 0 0 465px;
+}
+
+.botao_slider{
+	position:relative;
+	background-color: #94999c;
+	height: 8px;
+	width: 35px;
+	margin-right: 4px;
+	opacity:0.5;
+	cursor:pointer;
+	float:left;
+}
+
+.botao_slider_hover{
+	opacity:1;
+	box-shadow:#333 1px 1px 4px;
+	float:left;
+	position:relative;
+	background-color: #94999c;
+	height: 8px;
+	width: 35px;
+	margin-right: 4px;
+	cursor:pointer;
+}
+
+.txt_slider{
+	position:relative;
+	text-align:center;
+	font-family:"Open Sans Extrabold";
+	color:#dae1e6;
+	font-size:42px;
+	margin:-253px 0 0 0;
+	text-shadow:#333 1px 1px 2px;
+}
+
+/*QUEM SOMOS*/
+#quem_somos{
+	background:url(../img/bg_quem_somos.jpg) no-repeat;
+	height: 340px;
+	width: 1080px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #c1c6ca;		
+}
+
+#tlt_quem_somos{
+	font-family: "Bebas Neue";
+	font-size: 66px;
+	color: #468c40;
+	text-align: right;
+	height: 200px;
+	width: 260px;
+	float:left;	
+	line-height:68px;
+	margin-top:102px;
+}
+
+#sub_tlt_quem_somos{
+	font-family: "Open Sans Light";
+	font-size: 30px;
+	font-style:italic;
+	line-height:38px;
+	color: #666;	
+}
+
+#icone_quem_somos{
+	height: 38px;
+	width: 47px;
+	padding-top: 32px;
+	float: left;
+	margin:102px 0 0 43px;
+}
+
+#txt_quem_somos{
+	height: 150px;
+	width: 720px;
+	padding-top: 50px;	
+	float:left;
+	margin-top:102px;
+	line-height:27px;
+}
+
+.txt_quem_somos_extra_bold{
+	font-family:"Open Sans Extrabold";
+}
+
+/*QUALIDADES*/
+#qualidades{
+	height: 305px;
+	width: 1080px;
+	margin-top: 86px;
+	margin-bottom: 118px;	
+}
+
+.box_qualidade{
+	position:relative;
+	float: left;
+	height: 305px;
+	width: 250px;
+	margin-right: 10px;
+	margin-left: 10px;	
+}
+
+.img_qualidade{
+	height: 162px;
+	width: 163px;
+	margin-left: 43px;
+	margin-bottom: 25px;
+}
+
+.tlt_qualidade{
+	font-family: "Open Sans Extrabold";
+	font-size: 26px;
+	color: #468c40;
+	text-align: center;	
+	margin-bottom:6px;
+}
+
+.txt_qualidade{
+	text-align:center;
+}
+
+#box_qualidade2{
+	position:relative;
+	margin:0 137px 0 137px;
+}
+
