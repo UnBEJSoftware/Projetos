@@ -6,6 +6,7 @@
 	width:359px;
 	background:#cccfd2;
 	margin:1px 0 0 0;
+	color:#468c40;
 }
 
 
@@ -115,5 +116,5 @@ label{
 #mapa{
 	width:1080px;
 	height:300px;	
-	background:#666;
+	background:url(../img/bg_mapa.JPG) no-repeat;
 }
