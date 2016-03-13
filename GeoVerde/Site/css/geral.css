@@ -102,6 +102,7 @@ nav li a{
 
 nav li a:hover{
 	color:#468c40;
+	font-family:"Open Sans Extrabold";
 }
 
 /*CONTEÚDO*/
@@ -117,12 +118,27 @@ footer{
 	/*background:url(../img/padrao_rod.jpg) repeat;*/
 	background:#333;
 	width:auto;
-	height:77px;
+	height:102px;
 	border-bottom:6px #468c40 solid;
-	padding-top:53px;
+	padding-top:48px;
 	text-align:center;
+	line-height:28px;
 }
 
-.txt_verde{
+#telefone{
+	width:auto;
+	height:auto;
+	margin:0 auto;
+	font-family:"Open Sans Extrabold";
 	color:#468c40;
+	text-decoration:none;
+}
+
+#scroll_topo{
+	width:54px;
+	height:54px;
+	position:fixed;
+	background:#F00;
+	cursor:pointer;
+	margin:0 0 0 50%;
 }
