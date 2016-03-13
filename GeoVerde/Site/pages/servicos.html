@@ -1,10 +1,33 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>GeoVerde - Engenharia Ambiental</title>
 <link rel="stylesheet" type="text/css" href="../css/geral.css">
 <link rel="stylesheet" type="text/css" href="../css/home_servicos.css">
+<script type="text/javascript" language="javascript" src="../js/jquery-1.11.0.js"></script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function(e) {
+    
+	//Smothing scroll "escolha um serviço":
+	$("#escolha_servico").on('change',function(e){
+	    //Anulando algum possível efeito padrão do browser
+		e.preventDefault();
+
+	    //Montar nome do id do serviço
+		var serv=$("#escolha_servico").val();
+		var servico='#'+serv;
+		
+		//Ver a altura do serviço em relação ao topo
+		var heightServico=$(servico).offset().top;
+		/*alert(servico+"-"+heightServiço);*/
+		
+	    //Ir para o serviço nos milisegundos digitados
+		$('html, body').animate({scrollTop:heightServico},700);
+   });
+	
+});
+</script>
 </head>
 
 <body>
@@ -16,9 +39,9 @@
   </div>
   <nav>
    <ul>
-    <li ><a href="../index.html" title="Home" tabindex="1">Home</a></li>
-    <li class="pagina_no_menu"><a href="servicos.html" title="Serviços" tabindex="2">Serviços</a></li>
-    <li ><a href="contato.html" title="Contato" tabindex="3">Contato</a></li>
+    <li><a href="../index.html" title="Home" tabindex="1">Home</a></li>
+    <li><a href="servicos.html" title="Serviços" tabindex="2" class="pagina_no_menu">Serviços</a></li>
+    <li><a href="contato.html" title="Contato" tabindex="3">Contato</a></li>
    </ul>
   </nav>
  </div>
@@ -36,10 +59,11 @@
   
   <form name="form1" method="post" action="#">
     <label for="ecolha_servico">Escolha um serviço:</label>
-    <select name="ecolha_servico" id="ecolha_servico" accesskey="e" tabindex="4">
+    <select name="ecolha_servico" id="escolha_servico" accesskey="e" tabindex="4" onChange="teste()">
       <option value="servico1">Serviço 1</option>
       <option value="servico2">Serviço 2</option>
       <option value="servico3">Serviço 3</option>
+      <option value="servico4">Servico 4</option>
     </select>
   </form>
   
@@ -48,19 +72,26 @@
   <div class="box_servico">
     <p class="tlt_servico">Serviço 1</p>
     
-    <p class="txt_serviço">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit delenit augue duis dolore te feugait nulla facilisi.</p>
+    <p class="txt_serviço" id="servico1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit delenit augue duis dolore te feugait nulla facilisi.</p>
   </div>
   
   <!--SERVIÇO 2-->
   <div class="box_servico">
-    <p class="tlt_servico">Serviço 2</p>
+    <p class="tlt_servico" id="servico2"><a name="servico2">Serviço 2</a></p>
     
     <p class="txt_serviço">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit delenit augue duis dolore te feugait nulla facilisi.</p>
   </div>
   
   <!--SERVIÇO 3-->
   <div class="box_servico">
-    <p class="tlt_servico">Serviço 3</p>
+    <p class="tlt_servico" id="servico3">Serviço 3</p>
+    
+    <p class="txt_serviço">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit delenit augue duis dolore te feugait nulla facilisi.</p>
+  </div>
+  
+  <!--SERVIÇO 4-->
+  <div class="box_servico">
+    <p class="tlt_servico" id="servico4">Serviço 4</p>
     
     <p class="txt_serviço">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit delenit augue duis dolore te feugait nulla facilisi.</p>
   </div>
@@ -71,7 +102,9 @@
 
 <!--RODAPÉ-->
 <footer>
- <p><span class="txt_verde">©2015 - GeoVerde.</span> Desenvolvido pela empresa InSoft. Todos os direitos reservados.</p>
+ <div id="scroll_topo"></div>
+ <div id="telefone"><p><img src="../img/icone_tel.png" alt="Telefone" title="Telefone">&nbsp;&nbsp;(11) 3862-8715</p></div>
+ <p>©2015 - GeoVerde. Desenvolvido pela empresa InSoft. Todos os direitos reservados.</p>
 </footer>
 </body>
 </html>
