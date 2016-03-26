@@ -2,23 +2,39 @@
 /* CSS Document */
 
 .pagina_no_menu{
-	height:53px;
+	height:35px;
 	width:359px;
 	background:#cccfd2;
 	margin:1px 0 0 1px;
+	color:#468c40;
 }
 
 /*SLIDER*/
 #slider{
 	height: 462px;
 	width: 1080px;	
-	background:#666;
+	/*background-image:url(../img/logo.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	overflow:auto;*/
+}
+
+#slider ul li{
+	list-style-type:none;
 }
 
 .img_slider{
 	height: 462px;
 	width: 1080px;
 	position: relative;	
+	
+}
+
+.img_slider_hover{
+	height: 462px;
+	width: 1080px;
+	position: relative;
+	z-index:1000;	
 }
 
 #botoes_slider{
@@ -31,6 +47,7 @@
 .botao_slider{
 	position:relative;
 	background-color: #94999c;
+	/*background-color:#7D5133;*/
 	height: 8px;
 	width: 35px;
 	margin-right: 4px;
@@ -45,6 +62,7 @@
 	float:left;
 	position:relative;
 	background-color: #94999c;
+	/*background-color:#7D5133;*/
 	height: 8px;
 	width: 35px;
 	margin-right: 4px;

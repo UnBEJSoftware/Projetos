@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -6,9 +6,10 @@
 <link rel="stylesheet" type="text/css" href="../css/geral.css">
 <link rel="stylesheet" type="text/css" href="../css/servicos_conteudo.css">
 <script type="text/javascript" language="javascript" src="../js/jquery-1.11.0.js"></script>
+<script type="text/javascript" language="javascript" src="../js/voltar_topo.js"></script>
 <script type="text/javascript" language="javascript">
 $(document).ready(function(e) {
-    
+	
 	//Smothing scroll "escolha um serviço":
 	$("#escolha_servico").on('change',function(e){
 	    //Anulando algum possível efeito padrão do browser
@@ -31,6 +32,9 @@ $(document).ready(function(e) {
 </head>
 
 <body>
+<!--BOTÃO DE VOLTAR AO TOPO-->
+<div id="scroll_topo"><p><span style="font-family:'Open Sans'">&uarr;</span>&nbsp;Topo</p><div id="border_scroll_topo"></div></div>
+
 <!--TOPO-->
 <header>
  <div id="tp_interno">
@@ -102,7 +106,6 @@ $(document).ready(function(e) {
 
 <!--RODAPÉ-->
 <footer>
- <div id="scroll_topo"></div>
  <div id="telefone"><p><img src="../img/icone_tel.png" alt="Telefone" title="Telefone">&nbsp;&nbsp;(11) 3862-8715</p></div>
  <p>©2015 - GeoVerde. Desenvolvido pela empresa InSoft. Todos os direitos reservados.</p>
 </footer>

@@ -135,10 +135,26 @@ footer{
 }
 
 #scroll_topo{
-	width:54px;
-	height:54px;
+	width:108px;
+	height:49px;
 	position:fixed;
-	background:#F00;
+	background:#468c40;
+	margin:433px 0 0 92%;
+	z-index:1000;
+	padding-top:5px;
+	font-size:32px;
+	text-align:center;
+	font-family:"Bebas Neue";
+	border:0;
+	color:#d6dadc;
 	cursor:pointer;
-	margin:0 0 0 50%;
+}
+#border_scroll_topo{
+	width:108px;
+	height:15px;
+	position:absolute;
+	background:#468c40;
+	margin-top:-10px;
+	z-index:1000;
+	cursor:pointer;
 }
