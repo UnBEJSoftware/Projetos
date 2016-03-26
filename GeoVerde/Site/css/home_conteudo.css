@@ -105,7 +105,7 @@
 }
 
 #tlt_quem_somos{
-	font-family: "Bebas Neue";
+	font-family: "Bebas";
 	font-size: 66px;
 	color: #468c40;
 	text-align: right;
@@ -117,9 +117,8 @@
 }
 
 #sub_tlt_quem_somos{
-	font-family: "Open Sans Light";
+	font-family:"OpSLightItalic";
 	font-size: 30px;
-	font-style:italic;
 	line-height:38px;
 	color: #666;
 }
@@ -142,7 +141,7 @@
 }
 
 .txt_quem_somos_extra_bold{
-	font-family:"Open Sans Extrabold";
+	font-family:"OpSExtraBold";
 }
 
 /*QUALIDADES*/
@@ -170,7 +169,7 @@
 }
 
 .tlt_qualidade{
-	font-family: "Open Sans Extrabold";
+	font-family: "OpSExtraBold";
 	font-size: 26px;
 	color: #468c40;
 	text-align: center;
