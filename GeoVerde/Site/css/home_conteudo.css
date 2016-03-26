@@ -1,4 +1,19 @@
 @charset "utf-8";
+#owl-demo .owl-item div{
+  padding:5px;
+}
+#owl-demo .owl-item img{
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+
+
+
 /* CSS Document */
 
 .pagina_no_menu{
@@ -12,7 +27,7 @@
 /*SLIDER*/
 #slider{
 	height: 462px;
-	width: 1080px;	
+	width: 1080px;
 	/*background-image:url(../img/logo.png);
 	background-repeat:no-repeat;
 	background-position:center;
@@ -26,15 +41,15 @@
 .img_slider{
 	height: 462px;
 	width: 1080px;
-	position: relative;	
-	
+	position: relative;
+
 }
 
 .img_slider_hover{
 	height: 462px;
 	width: 1080px;
 	position: relative;
-	z-index:1000;	
+	z-index:1000;
 }
 
 #botoes_slider{
@@ -86,7 +101,7 @@
 	width: 1080px;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
-	border-bottom-color: #c1c6ca;		
+	border-bottom-color: #c1c6ca;
 }
 
 #tlt_quem_somos{
@@ -96,7 +111,7 @@
 	text-align: right;
 	height: 200px;
 	width: 260px;
-	float:left;	
+	float:left;
 	line-height:68px;
 	margin-top:102px;
 }
@@ -106,7 +121,7 @@
 	font-size: 30px;
 	font-style:italic;
 	line-height:38px;
-	color: #666;	
+	color: #666;
 }
 
 #icone_quem_somos{
@@ -120,7 +135,7 @@
 #txt_quem_somos{
 	height: 150px;
 	width: 720px;
-	padding-top: 50px;	
+	padding-top: 50px;
 	float:left;
 	margin-top:102px;
 	line-height:27px;
@@ -135,7 +150,7 @@
 	height: 305px;
 	width: 1080px;
 	margin-top: 86px;
-	margin-bottom: 118px;	
+	margin-bottom: 118px;
 }
 
 .box_qualidade{
@@ -144,7 +159,7 @@
 	height: 305px;
 	width: 250px;
 	margin-right: 10px;
-	margin-left: 10px;	
+	margin-left: 10px;
 }
 
 .img_qualidade{
@@ -158,7 +173,7 @@
 	font-family: "Open Sans Extrabold";
 	font-size: 26px;
 	color: #468c40;
-	text-align: center;	
+	text-align: center;
 	margin-bottom:6px;
 }
 
@@ -170,4 +185,3 @@
 	position:relative;
 	margin:0 137px 0 137px;
 }
-

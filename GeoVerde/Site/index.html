@@ -5,6 +5,10 @@
 <title>GeoVerde - Engenharia Ambiental</title>
 <link rel="stylesheet" type="text/css" href="css/geral.css">
 <link rel="stylesheet" type="text/css" href="css/home_conteudo.css">
+<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+
 <!--<script src="js/jquery-1.11.0.js"></script>-->
 <script type="text/javascript" language="javascript" src="js/jquery-1.11.0.js"></script>
 <script src="js/jquery-1.10.2-ui.js"></script>
@@ -12,61 +16,27 @@
 <script src="js/jquery-1.10.2-ui.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script type="text/javascript" language="javascript" src="js/voltar_topo.js"></script>
+<script type="text/javascript" language="javascript" src="js/owl.carousel.min.js"></script>
+
 <script type="text/javascript" language="javascript">
-$(document).ready(function(e) {
-    
-	//$('.img_slider img #fig1').show();
-	//$('.img_slider img #fig1').delay(5500).hide("slow",{direction:'left'},500);
-	
-	//Slider
-	$("#img2,#img3,#img4").hide();
-	$("#bt1").css({'opacity':1,
-					'box-shadow':'#333 1px 1px 4px',
-					'float':'left',
-					'position':'relative',
-					'background-color':'#94999c',
-					'height':'8px',
-					'width':'35px',
-					'margin-right':'4px',
-					'cursor':'pointer'});
-	
-	$(".botao_slider").click(function(e) {
-        
-		var bt=$(this).attr("id"),num_bt,descricao;
-		num_bt=bt.substr(2);
-		descricao=$('#img'+num_bt).attr("alt");
-		$('.txt_slider').html(descricao);
-		
-		for(x=1;x<=4;x++){
-		
-			if(x==num_bt){
-				$("#img"+x).show(600);
-				$("#bt"+x).css({'opacity':1,
-					'box-shadow':'#333 1px 1px 4px',
-					'float':'left',
-					'position':'relative',
-					'background-color':'#94999c',
-					'height':'8px',
-					'width':'35px',
-					'margin-right':'4px',
-					'cursor':'pointer'});
-			}else{
-				$("#img"+x).hide();
-				$("#bt"+x).css({'opacity':'0.5',
-					'box-shadow':'#333 1px 1px 4px',
-					'float':'left',
-					'position':'relative',
-					'background-color':'#94999c',
-					'height':'8px',
-					'width':'35px',
-					'margin-right':'4px',
-					'cursor':'pointer'});
-			}
-		}	
-    });
-	
-	
-	
+$(document).ready(function() {
+
+  $("#owl-demo").owlCarousel({
+
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+      autoPlay: 3000
+      // "singleItem:true" is a shortcut for:
+      // items : 1,
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+
+  });
+
 });
 </script>
 
@@ -88,35 +58,26 @@ $(document).ready(function(e) {
     <li><a href="pages/servicos.html" title="Serviços">Serviços</a></li>
     <li><a href="pages/contato.html" title="Contato">Contato</a></li>
    </ul>
-  </nav>
  </div>
+  </nav>
 </header>
- 
+
 <!--CONTEUDO-->
 <div id="conteudo">
- 
- <div id="slider">
-  
-   <ul>
-    <li><img src="img/slider/projeto_meio_amb.jpg" alt="Projetos de Meio Ambiente" title="Projetos de Meio Ambiente" width="1080" height="462" id="img1"></li>
-    <li><img src="img/slider/intervencoes_app.jpg" alt="Intervenções em APP" title="Intervenções em APP" width="1080" height="462" id="img2"></li>
-    <li><img src="img/slider/estudo_impacto_ambiental.jpg" alt="Estudo de Impacto Ambiental" title="Estudo de Impacto Ambiental" width="1080" height="462" id="img3"></li>
-    <li><img src="img/slider/licenciamento_ambiental.jpg" alt="Licenciamento Ambiental" title="Licenciamento Ambiental" width="1080" height="462" id="img4"></li>
-   </ul>
-  
-  <div class="txt_slider">
-   <p>Projetos de Meio Ambiente</p>
+
+
+  <!-- SLIDE - AUTOMATICO -->
+  <div id="owl-demo" class="owl-carousel owl-theme">
+
+    <div class="item"><img src="img/slider/projeto_meio_amb.jpg" alt="Projetos de Meio Ambiente"></div>
+    <div class="item"><img src="img/slider/intervencoes_app.jpg" alt="Intervenções em APP"></div>
+    <div class="item"><img src="img/slider/estudo_impacto_ambiental.jpg" alt="Estudo de Impacto Ambiental"></div>
+    <div class="item"><img src="img/slider/licenciamento_ambiental.jpg" alt="Licenciamento Ambiental"></div>
+
   </div>
-  
-  <div id="botoes_slider">
-   <div class="botao_slider" id="bt1"></div>
-   <div class="botao_slider" id="bt2"></div>
-   <div class="botao_slider" id="bt3"></div>
-   <div class="botao_slider" id="bt4"></div>
-  </div>
-  
- </div>
- 
+
+
+
  <div id="quem_somos">
   <div id="tlt_quem_somos">
    <p>Quem<br>somos</p>
